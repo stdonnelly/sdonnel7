@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <h2>Students</h2>
+    <% if (students[0]) { // Check if students is not empty %>
+        <ul>
+            <% for (let student of students) {%>
+            <li>
+                <%= student.name %>
+            </li>
+            <%}%>
+        
+        </ul>
+    <%} else {%>
+        <p>There is no student to display</p>
+    <%}%>
+</body>
+</html>
